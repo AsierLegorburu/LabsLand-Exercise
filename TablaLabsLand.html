@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Labs Land 2.Ariketa</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h3>TABLA DE LABORATORIOS</h3>
+        <table id="tabla">
+            <tr>
+                <th>Título</th>
+                <th>Descripción</th>
+                <th>Disponibilidad</th>
+                <th>Nivel</th>
+                <th>Autor</th>
+            </tr>
+            <tr class="td">
+                <td class="title">
+                    Sesión online: "Primeros pasos con Arduino, interactuando con dispositivos"
+                </td>
+                <td class="description">
+                    <span>Introducción a la programación en el Arduino UNO y al laboratorio de LabsLand</span><br>
+                    <span>A lo largo de la sesión se muestra cómo programar la placa Arduino UNO y cómo utilizarla en el 
+                        laboratorio remoto de Arduino de LabsLand. Se utilizarán también diversos tipos de dispositivos y periféricos.
+                        Primero, LEDs y servos. Después, poteciómetros, interruptores, pulsadores, y la pantalla OLED.
+                    </span>
+                    
+
+                    <p>El contenido de la sesión es el siguiente:</p>
+                    <ul>
+                        <li>Introducción a Arduino.</li>
+                        <li>Conectándose al laboratorio remoto de Arduino de LabsLand.</li>
+                        <li>Interactuando con luces.</li>
+                        <li>Iteractuando con servos.</li>
+                        <li>Usando los puertos analógicos.</li>
+                        <li>Usando una pantalla OLED.</li>
+                    </ul> 
+                    <p>La sesión la imparte Pedro Plaza, organizada en colaboración con Plaza Robótica, la UNED, la Rama de Estudiantes del IEEE de la UNED, y el Capítulo Español de la Sociedad de Educación de IEEE. Tuvo lugar el 14 de mayo de 2020.</p>   
+
+                        
+                </td>
+                <td>
+                    Público
+                </td>
+                <td>
+                    Universidad
+                </td>
+                <td>
+                    Pedro Plaza
+                </td>
+            </tr>
+            <tr class="td">
+                <td class="title">
+                    Sesión online: "Procesado Digital de Señal con Arduino".
+                </td>
+                <td class="description">
+                    <span>Introducción al procesado digital de señales utilizando dispositivos Arduino</span><br>
+                    <span>Se divide en:</span>
+                    <ul>
+                        <li>Introducción a Arduino.</li>
+                        <li>Introducción a DSP.</li>
+                        <li>Conectándose al laboratorio remoto de Arduino de LabsLand.</li>
+                        <li>Filtrado básico.</li>
+                        <li>Filtrado complejo.</li>
+                    </ul> 
+                    <p>
+                        La sesión es impartida por Pedro Plaza. En su organización ha colaborado la UNED, Plaza Robótica, la Rama de Estudiantes del IEEE en la UNED y el Capítulo Español de la Sociedad de Educación de IEEE. 
+                        Tuvo lugar el 12 de junio de 2020.
+                    </p>      
+                </td>
+                <td>
+                    Público
+                </td>
+                <td>
+                    Universidad. Nivel introductorio.
+                </td>
+                <td>
+                    Pedro Plaza
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <h3>INSERTAR NUEVA LíNEA</h3>
+        <div id="input">
+            Título:<br><input type="text" id="title" name="title"><br><br>
+            Descripción:<br><textarea id="description"  rows="10" cols="100" placeholder="Aquí puedes escribir la descripción del laboratorio. Para añadir una lista escribe '-' antes de cada elemento de la lista, por ejemplo: 
+            -Introducción
+            -Introducción a DSP" required></textarea><br><br>
+            Disponibilidad:<br><input type="text" id="availability" name="availability"><br><br>
+            Nivel:<br><input type="text" id="level" name="level"><br><br>
+            Autor:<br><input type="text" id="author" name="author"><br><br>
+        
+            <button type="button" onclick="addEntryToTable()">Insertar fila</button><span id="error">Completa todos los campos</span>
+        </div>
+        <script type="text/javascript" src="insertTable.js"></script>
+    </body>
+</html>
